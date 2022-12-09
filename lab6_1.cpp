@@ -3,9 +3,7 @@ using namespace std;
 
 int main(){
     int i,b=0,c=0;
-    cout << "Enter an integer: ";
-    cin >> i;
-    while(i>0)
+    while(true)
     {
         cout << "Enter an integer: ";
         cin >> i;
@@ -18,7 +16,7 @@ int main(){
         {
             b+=1;
         }
-        if(i%2!=2)
+        else
         {
             c+=1;
         }
@@ -26,6 +24,6 @@ int main(){
     }
     
     cout << "#Even numbers = "<<b<<"\n";
-    cout << "#Odd numbers = "<<c;
+    cout << "#Odd numbers = "<<c<<"\n";
     return 0;
 }
