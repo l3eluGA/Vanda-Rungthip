@@ -2,25 +2,27 @@
 using namespace std;
 
 int main(){
-    int i,b,c;
+    int i,b=0,c=0;
     cout << "Enter an integer: ";
     cin >> i;
     while(i>0)
     {
         cout << "Enter an integer: ";
         cin >> i;
-        if(i%2==0 && i>0)
-        {
-            b +=i;
-        }
         if(i==0)
         {
             break;
         }
-        else
+        
+        if(i%2==0)
         {
-            c +=i;
+            b+=1;
         }
+        if(i%2!=2)
+        {
+            c+=1;
+        }
+        
     }
     
     cout << "#Even numbers = "<<b<<"\n";
